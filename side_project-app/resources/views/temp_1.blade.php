@@ -8,7 +8,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <form action="{{ route('UI.create')}}" method="post">
+    <form action="{{ route('create')}}" method="post">
      @csrf
         <div>
             <label for="Name">* Name</label>
