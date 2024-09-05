@@ -12,7 +12,7 @@ class UI extends Controller
      */
     public function index()
     {
-        return view('temp_1');
+        return view('task');
     }
 
     /**
