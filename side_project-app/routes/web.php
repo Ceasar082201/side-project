@@ -2,5 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () { return view('welcome');});
-Route::get('/index', function () { return view('temp_1');});
+Route::post('/', function () { return view('temp_1');});
+Route::get('/welcome', function () { return view('welcome');});
