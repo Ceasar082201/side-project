@@ -12,8 +12,17 @@ class TaskController extends Controller
         return view('task');
     }
 
-    public function create(){
-        [];
+    public function create(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+        ]);
+
+        Task::create([
+            'name' => $request->input('name'),
+            'description' => $request->input('description'),
+        ]);
+        return redirect()->route('welcome')->with('success', 'Task created!');
     }
 
     public function store(Request $request) {

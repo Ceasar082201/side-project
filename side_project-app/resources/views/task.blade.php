@@ -8,11 +8,12 @@
 </head>
 <body>
     <form action="{{route('create')}}" method="post">
-        <input type="text" id="name" name="name">
-        <label for="name">Name: </label>
+         <label for="name">Name: </label>
+       <input type="text" id="name" name="name">
         <br><br>
         <label for="description">Description: </label>
         <input type="text" name="description" id="description">
+        <br><br>
         <button type="submit">Submit</button>
     </form>
 </body>
