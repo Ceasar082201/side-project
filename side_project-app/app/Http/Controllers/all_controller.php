@@ -7,6 +7,9 @@ use App\Models\User;
 
 class all_controller extends Controller
 {
+    public function index(){
+        return view('user.');
+    }
     public function create(Request $request){
         $request->validate([
             'name' => 'required',

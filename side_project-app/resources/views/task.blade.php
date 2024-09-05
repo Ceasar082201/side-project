@@ -7,7 +7,7 @@
     <title>Tasks</title>
 </head>
 <body>
-    <form action="{{route('task.store')}}" method="post">
+    <form action="{{route('create')}}" method="post">
         <input type="text" id="name" name="name">
         <label for="name">Name: </label>
         <br><br>

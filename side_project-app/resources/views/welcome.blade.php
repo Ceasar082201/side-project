@@ -9,7 +9,23 @@
 <body>
     <header>
         <h1>Welcome to my Landing Page!</h1>
-        <input type="search" name="search" id="">
+        
+        <form action="{{ route('create')}}" method="post">
+            @csrf
+               <div>
+                   <label for="Name">* Name</label>
+                   <input type="text" name="name" id="" required>
+               </div>
+               <div>
+                   <label for="Email">* Email</label>
+                   <input type="email" name="email" id="" required>        
+               </div>
+               <div>
+                   <label for="Password">* Password</label>
+                   <input type="password" name="pwd" id="" required>
+               </div>
+               <button type="submit">Sign Up</button>
+           </form>
     </header>
 </body>
 </html>
