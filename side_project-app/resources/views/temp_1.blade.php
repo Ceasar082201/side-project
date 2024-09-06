@@ -10,7 +10,18 @@
 <body>
     <header class="wrapper">
         <h1>Welcome to my Landing Page!</h1>
+        <a href="user">Username</a>
     </header>
-  
+ <hr>
+    <div class="sidebar">
+        <a href="http://Facebook.com">Facebook</a>
+        <br>
+        <br>
+        <a href="http://Youtube.com">Youtube</a>
+        <br>
+        <br>
+        <a href="http://GooglePlay.com">Play</a>
+    </div>
+    
 </body>
 </html>
