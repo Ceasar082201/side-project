@@ -25,8 +25,8 @@ class UI extends Controller
             'email' => $request->input('email'),
             'password' => $request->input('pwd'),
         ];
+        return redirect()->route('temp_1')->with('success', 'Account Created Successfully');
        
-        return redirect()->route('tem_1')->with('success', 'Account Created Successfully');
     }
 
     /**
@@ -34,11 +34,13 @@ class UI extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required',
-            'password' => 'required',
-        ]);
+        // // $request->validate([
+        // //     'name' => 'required',
+        // //     'email' => 'required',
+        // //     'password' => 'required',
+        // // ]);
+        //  return redirect()->view('Task.task')->with('success', 'Account Created Successfully');
+        return view('temp_1');
     }
 
     /**

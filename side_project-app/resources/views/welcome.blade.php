@@ -8,11 +8,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <header class="wrapper">
-        <h1>Welcome to my Landing Page!</h1>
-    </header>
+    
      
-    <form action="{{ route('create')}}" method="post">
+    <form action="{{ route('store')}}" method="post">
         @csrf
            <div>
                <label for="Name">* Name</label>

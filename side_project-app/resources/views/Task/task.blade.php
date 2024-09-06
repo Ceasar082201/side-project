@@ -8,7 +8,7 @@
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 </head>
 <body>
-    <form action="{{route('create')}}" method="post">
+    <form action="{{route('store')}}" method="post">
          <label for="name">Name: </label>
        <input type="text" id="name" name="name">
         <br><br>
