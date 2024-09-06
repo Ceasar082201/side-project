@@ -12,7 +12,7 @@ class UI extends Controller
      */
     public function index()
     {
-        return view('task');
+        return view('welcome');
     }
 
     /**
@@ -26,7 +26,7 @@ class UI extends Controller
             'password' => $request->input('pwd'),
         ];
        
-        return redirect()->route('home')->with('success', 'Account Created Successfully');
+        return redirect()->route('tem_1')->with('success', 'Account Created Successfully');
     }
 
     /**
