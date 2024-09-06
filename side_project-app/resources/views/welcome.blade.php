@@ -9,25 +9,23 @@
 </head>
 <body>
     
-     
+     <div class="wrapper">
     <form action="{{ route('store')}}" method="post">
         @csrf
-           <div>
+           <div class="wlcm">
                <label for="Name">* Name</label>
                <input type="text" name="name" id="" required>
            </div>
-           <div>
+           <div class="wlcm-1">
                <label for="Email">* Email</label>
                <input type="email" name="email" id="" required>        
            </div>
-           <div>
+           <div class="wlcm-2">
                <label for="Password">* Password</label>
                <input type="password" name="pwd" id="" required>
            </div>
            <button type="submit">Sign Up</button>
        </form>
-    <section>
-       
-    </section>
+     </div>
 </body>
 </html>

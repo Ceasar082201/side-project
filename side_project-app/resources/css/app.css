@@ -10,6 +10,13 @@ body {
 	height: 100%;
 }
 
+.wlcm,.wlcm-1,.wlcm-2{
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	align-content: center;
+}
+
 body {
 	background-color: #f5f5f5;
 	/* text-align: center; */
@@ -20,7 +27,7 @@ body {
 }
 
 header,
-.sidebar,.OtherSide {
+.sidebar{
 	background-color: #d9d9d9;
 	display: flex;
 }
@@ -63,14 +70,6 @@ header {
 }
 
 .sidebar {
-	width: 10%;
-	padding-top: 0.5%;
-	height: fit-content;
-	flex-direction: column;
-	align-items: center;
-}
-
-.OtherSide{
 	width: 10%;
 	padding-top: 0.5%;
 	height: fit-content;
