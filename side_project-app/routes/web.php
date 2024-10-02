@@ -5,12 +5,12 @@ use Illuminate\Support\Facades\Route;
 
 //sample_signup&landing page
 
-Route::get('/', function() { return view('welcome'); });
-Route::get('/temp_1', [UI::class, 'index'])->name('temp_1');
-Route::post('/temp_2', [UI::class, 'create'])->name('show');
-
-
+Route::get('/', function() { return view('welcome'); })->name('welcome');
+Route::get('/temp_1', [UI::class, 'index']);
+Route::get('/home', [UI::class, 'create'])->name('show');
+Route::get('/temp_1', function() { return view('temp_1'); })->name('temp_1');
+Route::post('/temp_1', [UI::class, 'create'])->name('create');
 //insert new contents
 
-Route:: get('/', function(){ return view ('home');})->name('create');
+// Route:: get('/', function(){ return view ('temp_1');});
 // Route:: get();

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\User;
 
 class UI extends Controller
 {
@@ -20,11 +20,11 @@ class UI extends Controller
      */
     public function create(Request $request)
     {
-        [
+        User::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'password' => $request->input('pwd'),
-        ];
+        ]);
         return redirect()->route('temp_1')->with('success', 'Account Created Successfully');
        
     }
