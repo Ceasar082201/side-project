@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Str;
 
+
 return [
 
     /*
@@ -16,7 +17,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'MySQL'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -44,10 +45,10 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DB_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'url' => env('DB_URL',),
+            'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '8026'),
-            'database' => env('DB_DATABASE', 'Sample'),
+            'database' => env('DB_DATABASE', 'side_project_app'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'roots'),
             'unix_socket' => env('DB_SOCKET', ''),
@@ -57,7 +58,7 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
+            'options' => extension_loaded('pdo_MySQL') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],

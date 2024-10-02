@@ -10,7 +10,7 @@
 <body>
     
      <div class="wrapper">
-    <form action="{{ route('store')}}" method="post">
+    <form action="{{ route('create')}}" method="post">
         @csrf
            <div class="wlcm">
                <label for="Name">* Name</label>

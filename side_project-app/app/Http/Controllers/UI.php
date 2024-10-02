@@ -34,12 +34,12 @@ class UI extends Controller
      */
     public function store(Request $request)
     {
-        // // $request->validate([
-        // //     'name' => 'required',
-        // //     'email' => 'required',
-        // //     'password' => 'required',
-        // // ]);
-        //  return redirect()->view('Task.task')->with('success', 'Account Created Successfully');
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
+        ]);
+         return redirect()->view('Task.task')->with('success', 'Account Created Successfully');
         return view('temp_1');
     }
 
