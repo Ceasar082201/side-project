@@ -5,27 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Side_Project-App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     
      <div class="wrapper">
+   <div class="main-wrapper">
     <form action="{{ route('create')}}" method="post">
         @csrf
-           <div class="wlcm">
-               <label for="Name">* Name</label>
-               <input type="text" name="name" id="" required>
+           <div class="input_1">
+            <i class="bi bi-person"></i><label for="name"></label>
+               <input type="text" name="name" id="" placeholder="Username" required>
            </div>
-           <div class="wlcm-1">
-               <label for="Email">* Email</label>
-               <input type="email" name="email" id="" required>        
+           <div class="input_2">
+               <i class="bi bi-envelope-at"></i><label for="Email"></label>
+               <input type="email" name="email" id="" placeholder="E-mail" required>        
            </div>
-           <div class="wlcm-2">
-               <label for="Password">* Password</label>
-               <input type="password" name="pwd" id="" required>
+           <div class="input_3">
+             <label for="pwd"><i class="bi bi-eye-slash" onclick="Toggle()" id="eye" ></i></label>
+            <input type="password" name="pwd" placeholder="Password *" id="pwds">
            </div>
            <button type="submit">Sign Up</button>
        </form>
+   </div>
+   <i class="bi bi-telephone"></i>
+   <br>
+   <i class="bi bi-chat-heart"></i>
      </div>
+     
 </body>
+<script>
+        function Toggle() {
+            let temp = document.getElementById("pwds");
+            let eye = document.getElementById("eye");
+            if (temp.type === "password") {
+                temp.type = "text";
+                eye.classList.add("bi-eye");
+                eye.classList.remove("bi-eye-slash");
+            }
+            else {
+                temp.type = "password";
+                eye.classList.add("bi-eye-slash");
+                eye.classList.remove("bi-eye");
+            }
+        }
+    </script>
 </html>
