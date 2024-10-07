@@ -16,24 +16,19 @@
         @csrf
            <div class="input_1">
             <i class="bi bi-person"></i><label for="name"></label>
-               <input type="text" name="name" id="" placeholder="Username" required>
+               <input type="text" name="name" id="" placeholder="Username *" required>
            </div>
            <div class="input_2">
                <i class="bi bi-envelope-at"></i><label for="Email"></label>
-               <input type="email" name="email" id="" placeholder="E-mail" required>        
+               <input type="email" name="email" id="" placeholder="E-mail *" required>        
            </div>
            <div class="input_3">
              <label for="pwd"><i class="bi bi-eye-slash" onclick="Toggle()" id="eye" ></i></label>
             <input type="password" name="pwd" placeholder="Password *" id="pwds">
            </div>
-           <button type="submit">Sign Up</button>
+           <button type="submit" class="btn btn-mg-3">Sign Up</button>
        </form>
    </div>
-   <i class="bi bi-telephone"></i>
-   <br>
-   <i class="bi bi-chat-heart"></i>
-     </div>
-     
 </body>
 <script>
         function Toggle() {

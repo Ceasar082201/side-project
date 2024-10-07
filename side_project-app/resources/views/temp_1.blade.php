@@ -23,5 +23,9 @@
         <br>
         <a href="http://reddit.com" target="_blank"><i class="bi bi-reddit"></i> Reddit</a>
     </div>
+    <section>
+        <h3>Welcome Home</h3>
+        a
+    </section>
 </body>
 </html>

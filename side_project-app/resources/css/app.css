@@ -7,6 +7,7 @@
 .input_1 .input_2 .input_3{
 	border: hidden;
 	border-radius: 11%;
+	
 }
 
 html,
@@ -86,6 +87,7 @@ header {
 	margin-left: 11px;
 	padding-left: 3px;
 	padding-right: 3px;
+	overflow: hidden;
 }
 
 
@@ -178,24 +180,6 @@ td button {
 	width: 10vw;
 	border-radius: 5%;
 }
-
-.user_name,
-.user_email,
-.user_pwd,
-.user_confrm {
-	width: 100%;
-	color: #021526;
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-}
-
-.create-btn {
-	background-color: #5F6F65;
-	color: white;
-	margin-top: 10px;
-}
-
 
 /* calendar */
 

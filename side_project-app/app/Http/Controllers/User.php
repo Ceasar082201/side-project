@@ -18,7 +18,6 @@ class User extends Controller
    public function show()
    {
     
-
     return view('temp_3');
    }
 
