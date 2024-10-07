@@ -15,11 +15,11 @@ class User extends Controller
     return DB::table('task')->get();
    }
 
-   public function show(string $id)
+   public function show()
    {
     
 
-    return view();
+    return view('temp_3');
    }
 
    public function edit(string $id)

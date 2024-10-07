@@ -1,1 +1,1 @@
-@yield('content')
+@section('content')
