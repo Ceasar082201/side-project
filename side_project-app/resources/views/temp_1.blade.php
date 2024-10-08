@@ -12,7 +12,7 @@
 <body>
     <header class="wrapper">
         <h3>Welcome to my Landing Page!</h3>
-        <a href="#!">Username</a>
+        <a href="{{route('welcome')}}"><i class="bi bi-umbrella-fill"></i></a>
     </header>
     <div class="main-wrapper">
         <div class="sidebar">
