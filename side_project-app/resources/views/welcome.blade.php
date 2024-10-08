@@ -11,7 +11,7 @@
 </head>
 <body>
     
-     <div class="wrapper">
+     <div class="container flex-xl-column">
    <div class="main-wrapper">
     <form action="{{ route('create')}}" method="post">
         @csrf
