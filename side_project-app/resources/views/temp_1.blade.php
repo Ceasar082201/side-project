@@ -12,10 +12,10 @@
 <body>
     <header class="wrapper">
         <h3>Welcome to my Landing Page!</h3>
-        <a href="{{route('welcome')}}"><i class="bi bi-umbrella-fill"></i></a>
+        {{-- <a href="{{route('welcome')}}"><i class="bi bi-umbrella-fill"></i></a> --}}
     </header>
-    <div class="main-wrapper">
-        <div class="sidebar">
+    <div class="main-wrapper px-3">
+        <div class="column">
         <a href="http://Facebook.com" target="_self"><i class="bi bi-facebook"></i></a>
         
         <a href="http://Youtube.com" target="_self"><i class="bi bi-youtube"></i></a>

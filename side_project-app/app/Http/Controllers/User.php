@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+
 use App\Models\UI;
 
 class User extends Controller
@@ -12,13 +12,12 @@ class User extends Controller
    {
     //
     return view('temp_1');
-    return DB::table('task')->get();
+
    }
 
    public function show()
    {
-    
-    return view('temp_3');
+    //
    }
 
    public function edit(string $id)
@@ -34,10 +33,11 @@ class User extends Controller
    public function store(Request $request)
    {
     $request->validate([
-        'name'=>'required',
-        'email'=>'required',
-        'password'=>'required',
+        'name'=>'required|string|max:250',
+        'email'=>'required|email|max:120',
+        'password'=>'required|max: 8',
     ]);
+    return redirect()->back()->with('Success','Form Submitted successfully');
    }
 
    public function destroy(string $id)

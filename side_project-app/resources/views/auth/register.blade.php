@@ -10,29 +10,24 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    
-     <div class="container d-flex align-items-center">
-   <div class="wrapper">
-    <form action="{{ route('create')}}" method="post">
+    <form action="{{ route('register')}}" method="post">
         @csrf
-           <div class="input_1">
-            <label for="name"><i class="bi bi-person"></i></label>
-               <input type="text" name="name" id="name" placeholder="Username *" required autocomplete="on">
-           </div>
-           <div class="input_2">
-              <label for="email"> <i class="bi bi-envelope-at"></i></label>
-               <input type="email" name="email" id="email" placeholder="E-mail *" required autocomplete="on">        
-           </div>
-           <div class="input_3">
-             <label for="pwds"><i class="bi bi-eye-slash" onclick="Toggle()" id="eye" ></i></label>
-            <input type="password" name="password" placeholder="Password *" id="pwds">
-           </div>
-           <button type="submit" class="btn btn-mg-3">Sign Up</button>
-       </form>
-   </div>
-</body>
+        <div class="input_1">
+        <label for="name"><i class="bi bi-person"></i></label>
+            <input type="text" name="name" id="name" placeholder="Username *" required autocomplete="on">
+        </div>
+        <div class="input_2">
+            <label for="email"> <i class="bi bi-envelope-at"></i></label>
+            <input type="email" name="email" id="email" placeholder="E-mail *" required autocomplete="on">        
+        </div>
+        <div class="input_3">
+            <label for="password"><i class="bi bi-eye-slash" onclick="Toggle()" id="eye" ></i></label>
+        <input type="password" name="password" placeholder="Password *" id="password">
+        </div>
+        <button type="submit" class="btn btn-mg-3">Sign Up</button>
+    </form>
 <script>
-        function Toggle() {
+    function Toggle() {
             let temp = document.getElementById("pwds");
             let eye = document.getElementById("eye");
             if (temp.type === "password") {
@@ -46,5 +41,6 @@
                 eye.classList.remove("bi-eye");
             }
         }
-    </script>
+</script>
+</body>
 </html>

@@ -20,12 +20,20 @@ class UI extends Controller
      */
     public function create(Request $request)
     {
+        // dd($request->all());
+
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
+        ]);
+
         User::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),
-            'password' => $request->input('pwd'),
+            'password' => $request->input('password'),
         ]);
-        return redirect()->route('temp_1')->with('success', 'Account Created Successfully');
+        return redirect()->view('testview')->with('success', 'Account Created Successfully');
        
     }
 
@@ -39,8 +47,8 @@ class UI extends Controller
             'email' => 'required',
             'password' => 'required',
         ]);
-         return redirect()->view('Task.task')->with('success', 'Account Created Successfully');
-        return view('temp_1');
+         return redirect()->view('temp_1')->with('success', 'Account Created Successfully');
+
     }
 
     /**
@@ -49,6 +57,9 @@ class UI extends Controller
     public function show(string $id)
     {
         //
+    }
+    public function test(){
+        return view('testview');
     }
 
     /**

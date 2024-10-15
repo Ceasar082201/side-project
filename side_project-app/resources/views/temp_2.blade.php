@@ -1,1 +1,3 @@
-@section('content')
+@section('Content')
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+@endsection
