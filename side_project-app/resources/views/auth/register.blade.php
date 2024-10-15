@@ -22,7 +22,7 @@
         </div>
         <div class="input_3">
             <label for="password"><i class="bi bi-eye-slash" onclick="Toggle()" id="eye" ></i></label>
-        <input type="password" name="password" placeholder="Password *" id="password">
+        <input type="password" name="password" placeholder="Password *" id="pwds">
         </div>
         <button type="submit" class="btn btn-mg-3">Sign Up</button>
     </form>
