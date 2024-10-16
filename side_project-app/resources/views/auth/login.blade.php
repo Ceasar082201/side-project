@@ -15,7 +15,7 @@
     </header>
     <div class="main">
         <nav class="sidebar">
-            <button class="btn btn-primary mb-1 nav-btn"><a href="#"><i class="bi bi-house"></i> Home</a></button>
+            <button class="btn btn-primary mb-1 nav-btn"><a href="/login"><i class="bi bi-house"></i> Home</a></button>
             <button class="btn btn-primary mb-1 nav-btn"><a href="#"><i class="bi bi-activity"></i> Data</a></button>
         </nav>
 

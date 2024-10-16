@@ -28,10 +28,13 @@ class AuthController extends Controller
 
         return redirect('/login');
     }
-
+    
     public function displayData() {
-        $displayedData = User::where()->orderBy()->get();
+        $user = User::all();
+        foreach ($user as $user) {
+            $user -> local_created_at = $user -> created_at -> timezone('Asia/Manila')->format('d/m/Y H:i:s');
+        }
 
-        return view('');
+        return view('display.index');
     }
 }
