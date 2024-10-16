@@ -30,11 +30,7 @@ class AuthController extends Controller
     }
     
     public function displayData() {
-        $user = User::all();
-        foreach ($user as $user) {
-            $user -> local_created_at = $user -> created_at -> timezone('Asia/Manila')->format('d/m/Y H:i:s');
-        }
-
-        return view('display.index');
+       
+        return view('display.create');
     }
 }

@@ -12,6 +12,7 @@ class data extends Model
     protected $fillable = [
         'name',
         'email',
-        
+        'created_at',
+        'updated_at',
     ];
 }

@@ -1,4 +1,4 @@
-@extends('auth.login')
+@extends('login')
 
 @section('title')
     side_project-app
