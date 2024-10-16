@@ -28,4 +28,10 @@ class AuthController extends Controller
 
         return redirect('/login');
     }
+
+    public function displayData() {
+        $displayedData = User::where()->orderBy()->get();
+
+        return view('');
+    }
 }
