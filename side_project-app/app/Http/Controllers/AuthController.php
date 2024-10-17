@@ -31,6 +31,6 @@ class AuthController extends Controller
     
     public function displayData() {
        
-        return view('display.create');
+        return view('display.index');
     }
 }
